@@ -21,7 +21,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::prefix('/admin')->middleware(['auth','isAdmin'])->group(function(){
+Route::prefix('admin')->middleware(['auth','isAdmin'])->group(function(){
 
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('admindashboard');
 });
