@@ -84,10 +84,10 @@
                 <div class="collapse" id="proprtyunits">
                     <ul class="nav sub-menu">
                         <li class="nav-item">
-                            <a href="" class="nav-link">View Property Units</a>
+                            <a href="" class="nav-link">Create Property Unit</a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link">Create Property Units</a>
+                            <a href="" class="nav-link">View Property Units</a>
                         </li>
 
                     </ul>
