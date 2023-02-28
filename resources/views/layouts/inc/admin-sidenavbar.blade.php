@@ -46,10 +46,10 @@
                 <div class="collapse" id="landlords">
                     <ul class="nav sub-menu">
                         <li class="nav-item">
-                            <a href="" class="nav-link">View Landlords</a>
+                            <a href="" class="nav-link">Register Landlord</a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link">Create Landlord</a>
+                            <a href="" class="nav-link">View Landlords</a>
                         </li>
 
                     </ul>
