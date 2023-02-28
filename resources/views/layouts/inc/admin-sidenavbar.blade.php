@@ -103,10 +103,10 @@
                 <div class="collapse" id="leases">
                     <ul class="nav sub-menu">
                         <li class="nav-item">
-                            <a href="" class="nav-link">View Leases</a>
+                            <a href="" class="nav-link">Create Lease</a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link">Create Leases</a>
+                            <a href="" class="nav-link">Show Leases</a>
                         </li>
                         <li class="nav-item">
                             <a href="" class="nav-link">Expiring Leases</a>
@@ -128,10 +128,10 @@
                 <div class="collapse" id="inventory">
                     <ul class="nav sub-menu">
                         <li class="nav-item">
-                            <a href="" class="nav-link">View Inventory</a>
+                            <a href="" class="nav-link">Add Inventory</a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link">Create Inventory</a>
+                            <a href="" class="nav-link">Show Inventories</a>
                         </li>
 
                     </ul>
