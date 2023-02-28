@@ -28,7 +28,7 @@
                 <div class="collapse" id="tenants">
                     <ul class="nav sub-menu">
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Register Tenant</a>
+                            <a href="{{route('tenantcreate')}}" class="nav-link">Register Tenant</a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">View Tenants</a>
