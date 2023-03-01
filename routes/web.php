@@ -28,7 +28,9 @@ Route::prefix('admin')->middleware(['auth','isAdmin'])->group(function(){
 
     //Tenant Routes
     Route::group(['prefix' =>'tenant'], function(){
-        Route::get('/create', [TenantController::class, 'create'])->name('tenantcreate');
+        Route::get('/', [TenantController::class, 'index'])->name('tenant_index');
+        Route::get('/create', [TenantController::class, 'create'])->name('tenant_create');
+        Route::post('/', [TenantController::class, 'store'])->name('tenant_store');
     });
 
 
