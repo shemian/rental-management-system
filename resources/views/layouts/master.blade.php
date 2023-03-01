@@ -27,7 +27,7 @@
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
 
     <!-- Scripts -->
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+
 </head>
 <body>
 <div class="main-wrapper">
@@ -53,14 +53,14 @@
 
 
 <!-- core:js -->
-<script src="../assets/vendors/core/core.js"></script>
+<script src="{{asset('assets/vendors/core/core.js')}}"></script>
 <!-- endinject -->
 
 <!-- Plugin js for this page -->
-<script src="../assets/vendors/chartjs/Chart.min.js"></script>
-<script src="../assets/vendors/jquery.flot/jquery.flot.js"></script>
-<script src="../assets/vendors/jquery.flot/jquery.flot.resize.js"></script>
-<script src="../assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+<script src="{{asset('assets/vendors/chartjs/Chart.min.js')}}"></script>
+<script src="{{asset('assets/vendors/jquery.flot/jquery.flot.js')}}"></script>
+<script src="{{asset('assets/vendors/jquery.flot/jquery.flot.resize.js')}}"></script>
+<script src="{{asset('assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js')}}"></script>
 <!-- <script src="../assets/vendors/apexcharts/apexcharts.min.js"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.4/apexcharts.min.js"></script>
 <!-- End plugin js for this page -->
