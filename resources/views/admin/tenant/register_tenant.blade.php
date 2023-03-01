@@ -9,7 +9,7 @@
                 <h5>Tenant Details</h5>
             </div>
             <div class="card-body">
-                <form action="" method="post" enctype="multipart/form-data">
+                <form action="{{route('tenant_store')}}" method="post" enctype="multipart/form-data">
                     @csrf
                     <div class="row mt-4">
                         <div class="col-md-6">
