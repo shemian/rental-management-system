@@ -26,5 +26,10 @@ Route::prefix('admin')->middleware(['auth','isAdmin'])->group(function(){
 
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('admindashboard');
 
-    Route::get('/tenant/create', [TenantController::class, 'create'])->name('tenantcreate');
+    //Tenant Routes
+    Route::group(['prefix' =>'tenant'], function(){
+        Route::get('/create', [TenantController::class, 'create'])->name('tenantcreate');
+    });
+
+
 });
