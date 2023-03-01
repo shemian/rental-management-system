@@ -64,7 +64,7 @@
                     <div class="p-1">
                         <a href="javascript:;" class="dropdown-item d-flex align-items-center py-2">
                             <div class="me-3">
-                                <img class="wd-30 ht-30 rounded-circle" src="../assets/images/faces/face2.jpg" alt="userr">
+                                <img class="wd-30 ht-30 rounded-circle" src="{{asset('assets/images/faces/face1.jpg')}}">
                             </div>
                             <div class="d-flex justify-content-between flex-grow-1">
                                 <div class="me-4">
@@ -76,7 +76,7 @@
                         </a>
                         <a href="javascript:;" class="dropdown-item d-flex align-items-center py-2">
                             <div class="me-3">
-                                <img class="wd-30 ht-30 rounded-circle" src="../assets/images/faces/face3.jpg" alt="userr">
+                                <img class="wd-30 ht-30 rounded-circle" src="{{asset('assets/images/faces/face3.jpg')}}" alt="userr">
                             </div>
                             <div class="d-flex justify-content-between flex-grow-1">
                                 <div class="me-4">
@@ -88,7 +88,7 @@
                         </a>
                         <a href="javascript:;" class="dropdown-item d-flex align-items-center py-2">
                             <div class="me-3">
-                                <img class="wd-30 ht-30 rounded-circle" src="../assets/images/faces/face4.jpg" alt="userr">
+                                <img class="wd-30 ht-30 rounded-circle" src="{{asset('assets/images/faces/face4.jpg')}}" alt="userr">
                             </div>
                             <div class="d-flex justify-content-between flex-grow-1">
                                 <div class="me-4">
@@ -100,7 +100,7 @@
                         </a>
                         <a href="javascript:;" class="dropdown-item d-flex align-items-center py-2">
                             <div class="me-3">
-                                <img class="wd-30 ht-30 rounded-circle" src="../assets/images/faces/face5.jpg" alt="userr">
+                                <img class="wd-30 ht-30 rounded-circle" src="{{asset('assets/images/faces/face5.jpg')}}" alt="userr">
                             </div>
                             <div class="d-flex justify-content-between flex-grow-1">
                                 <div class="me-4">
@@ -112,7 +112,7 @@
                         </a>
                         <a href="javascript:;" class="dropdown-item d-flex align-items-center py-2">
                             <div class="me-3">
-                                <img class="wd-30 ht-30 rounded-circle" src="../assets/images/faces/face6.jpg" alt="userr">
+                                <img class="wd-30 ht-30 rounded-circle" src="{{asset('assets/images/faces/face6.jpg')}}" alt="userr">
                             </div>
                             <div class="d-flex justify-content-between flex-grow-1">
                                 <div class="me-4">
@@ -161,7 +161,7 @@
                         </a>
                         <a href="javascript:;" class="dropdown-item d-flex align-items-center py-2">
                             <div class="wd-30 ht-30 d-flex align-items-center justify-content-center bg-primary rounded-circle me-3">
-                                <img class="wd-30 ht-30 rounded-circle" src="../assets/images/faces/face6.jpg" alt="userr">
+                                <img class="wd-30 ht-30 rounded-circle" src="{{asset('assets/images/faces/face4.jpg')}}" alt="userr">
                             </div>
                             <div class="flex-grow-1 me-2">
                                 <p>New customer registered</p>
@@ -194,12 +194,12 @@
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img class="wd-30 ht-30 rounded-circle" src="../assets/images/faces/face1.jpg" alt="profile">
+                    <img class="wd-30 ht-30 rounded-circle" src="{{asset('assets/images/faces/face1.jpg')}} "alt="profile">
                 </a>
                 <div class="dropdown-menu p-0" aria-labelledby="profileDropdown">
                     <div class="d-flex flex-column align-items-center border-bottom px-5 py-3">
                         <div class="mb-3">
-                            <img class="wd-80 ht-80 rounded-circle" src="../assets/images/faces/face1.jpg" alt="">
+                            <img class="wd-80 ht-80 rounded-circle" src="{{asset('assets/images/faces/face1.jpg')}}" alt="">
                         </div>
                         <div class="text-center">
                             <p class="tx-16 fw-bolder">Amiah Burton</p>
