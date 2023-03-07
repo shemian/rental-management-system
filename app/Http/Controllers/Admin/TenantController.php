@@ -5,15 +5,36 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Http\Requests\Admin\TenantProfileRequest;
+use App\Models\Admin\TenantProfile;
+use DataTables;
+use Log;
 
 class TenantController extends Controller
 {
-    public function create(){
-        return view('admin.tenant.register_tenant');
-    }
+
 
     public function index(){
         return view('admin.tenant.index');
+    }
+
+    public function getTenant(Request $request){
+
+        if ($request->ajax()) {
+            $tenantprofile = TenantProfile::all();
+            Log::info($tenantprofile);
+            return Datatables::of($tenantprofile )
+                ->addIndexColumn()
+                ->addColumn('action', function($row){
+                    $actionBtn = '<a class="dropdown-item d-flex align-items-center" href="javascript:;"><i data-feather="edit-2" class="icon-sm me-2"></i> <span class="">Edit</span></a> <a href="javascript:void(0)" class="delete btn btn-danger btn-sm">Delete</a>';
+                    return $actionBtn;
+                })
+                ->rawColumns(['action'])
+                ->make(true);
+        }
+    }
+
+    public function create(){
+        return view('admin.tenant.register_tenant');
     }
 
     public function store(TenantProfileRequest $request){
