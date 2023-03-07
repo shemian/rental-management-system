@@ -25,6 +25,8 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-steps/1.1.0/jquery.steps.js" ></script>
 
     <!-- Scripts -->
 
@@ -64,7 +66,7 @@
 <!-- <script src="../assets/vendors/apexcharts/apexcharts.min.js"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.4/apexcharts.min.js"></script>
 <!-- End plugin js for this page -->
-
+<script src="//cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
 <!-- inject:js -->
 <script src="{{asset('assets/vendors/feather-icons/feather.min.js')}}"></script>
 <script src="{{asset('assets/js/template.js')}}"></script>
