@@ -1,6 +1,6 @@
 <nav class="sidebar">
     <div class="sidebar-header">
-        <a href="{{route('admindashboard')}}" class="sidebar-brand">
+        <a href="{{route('admin_dashboard')}}" class="sidebar-brand">
             Property<span>Ms</span>
         </a>
         <div class="sidebar-toggler not-active">
@@ -13,7 +13,7 @@
         <ul class="nav">
             <li class="nav-item nav-category">Main</li>
             <li class="nav-item">
-                <a href="{{route('admindashboard')}}" class="nav-link">
+                <a href="{{route('admin_dashboard')}}" class="nav-link">
                     <i class="link-icon" data-feather="box"></i>
                     <span class="link-title">Dashboard</span>
                 </a>
@@ -46,10 +46,10 @@
                 <div class="collapse" id="landlords">
                     <ul class="nav sub-menu">
                         <li class="nav-item">
-                            <a href="" class="nav-link">Register Landlord</a>
+                            <a href="{{route('landlord_create') }}" class="nav-link">Register Landlord</a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link">View Landlords</a>
+                            <a href="{{route('landlord_index') }}" class="nav-link">View Landlords</a>
                         </li>
 
                     </ul>
