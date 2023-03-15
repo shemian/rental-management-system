@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Requests\Admin;
+namespace App\Http\Requests\admin;
 
 use Illuminate\Foundation\Http\FormRequest;
 
@@ -31,7 +31,7 @@ class TenantProfileRequest extends FormRequest
             ],
             'email'=>[
                 'required',
-                'email',
+                'email:rfc,dns',
                 'unique:tenant_profiles',
                 'string',
                 'max:200'
