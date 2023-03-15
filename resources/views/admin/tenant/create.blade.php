@@ -5,9 +5,23 @@
     <h6>Create Tenant</h6>
     <section>
         <div class="card mt-4">
+            @if (session('message'))
+                <div class="alert alert-success mt-2">
+                    {{ session('message') }}
+                </div>
+            @endif
             <div class="card-header ">
                 <h5>Tenant Details</h5>
             </div>
+                @if ($errors->any())
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
             <div class="card-body">
                 <form action="{{route('tenant_store')}}" method="post" enctype="multipart/form-data">
                     @csrf
@@ -61,9 +75,9 @@
                         </div>
                     </div>
                     <div class="row mt-4">
-                        <div class="col-md-6 mt-4">
+                        <div class="col-md-6 ">
+                            <label for="occupation_status">Occupation Status</label>
                             <select class="custom-select form-control" name="occupation_status">
-                                <option >Choose Employment Status...</option>
                                 <option value="Employee">Employee</option>
                                 <option value="Employed">Employed</option>
                                 <option value="Self Employed">Self Employed</option>
