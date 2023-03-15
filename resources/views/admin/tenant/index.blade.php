@@ -18,6 +18,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="card-body">
                 <table class="table table-bordered table-striped" id="tenant-table">
                     <thead>
@@ -59,7 +60,7 @@
                 ], //not working
 
                 ajax: {
-                    "url" : "/admin/gettenant",
+                    "url" : "tenant/get_tenant",
                     "type" : "GET",
                     error: function(thrownError){
                         console.log(thrownError);// to debug error on dataTables
