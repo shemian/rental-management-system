@@ -63,7 +63,7 @@
                     <div class="row mt-4">
                         <div class="col-md-6 mt-4">
                             <select class="custom-select form-control" name="occupation_status">
-                                <option selected>Choose Employment Status...</option>
+                                <option >Choose Employment Status...</option>
                                 <option value="Employee">Employee</option>
                                 <option value="Employed">Employed</option>
                                 <option value="Self Employed">Self Employed</option>
