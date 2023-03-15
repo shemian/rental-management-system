@@ -9,7 +9,7 @@ class TenantProfile extends Model
 {
     use HasFactory;
     protected $table = 'tenant_profiles';
-    protected $fillable =[
+    protected $fillables =[
         'name',
         'email',
         'phone',
