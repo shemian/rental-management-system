@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\TenantController;
 use App\Http\Controllers\Admin\LandlordProfileController;
+use App\Http\Controllers\Admin\TenantProfileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,10 +30,10 @@ Route::prefix('/admin')->middleware(['auth','isAdmin'])->group(function(){
 
     //Tenant Routes
     Route::group(['prefix' =>'tenant'], function(){
-        Route::get('/', [TenantController::class, 'index'])->name('tenant_index');
-        Route::get('/create', [TenantController::class, 'create'])->name('tenant_create');
-        Route::post('/', [TenantController::class, 'store'])->name('tenant_store');
-        Route::get('/get-tenant', [TenantController::class, 'getTenant'])->name('tenant_list');
+        Route::get('/', [TenantProfileController::class, 'index'])->name('tenant_index');
+        Route::get('/create', [TenantProfileController::class, 'create'])->name('tenant_create');
+        Route::post('/', [TenantProfileController::class, 'store'])->name('tenant_store');
+        Route::get('/get_tenant', [TenantProfileController::class, 'getTenant'])->name('tenant.list');
     });
 
     //landlords Routes
