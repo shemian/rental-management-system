@@ -45,7 +45,7 @@ class LandlordProfileController extends Controller
 
 
 
-        return redirect()->route('landlord_index',['landlordprofile'=>LandlordProfile::all()]);
+        return redirect()->route('landlord_index')->with('message', 'Success landlord Create Successfully');
 
     }
 
