@@ -8,6 +8,11 @@
     @endsection()
     <div class="container mt-5">
         <div class="card mt-4">
+            @if (session('message'))
+                <div class="alert alert-success mt-2">
+                    {{ session('message') }}
+                </div>
+            @endif
             <div class="card-header">
                 <div class="row">
                     <div class="col-md-9">
