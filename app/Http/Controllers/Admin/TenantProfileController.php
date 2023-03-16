@@ -68,6 +68,6 @@ class TenantProfileController extends Controller
         $tenantProfile->emergency_contact_number =$data['emergency_contact_number'];
         $tenantProfile->save();
 
-        return redirect()->route('tenant_index');
+        return redirect()->route('tenant_index')->with('message', 'Success Tenant Create Successfully');
     }
 }
