@@ -5,6 +5,7 @@ use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\TenantController;
 use App\Http\Controllers\Admin\LandlordProfileController;
 use App\Http\Controllers\Admin\TenantProfileController;
+use App\Http\Controllers\Admin\PropertyController;
 
 /*
 |--------------------------------------------------------------------------
@@ -42,6 +43,12 @@ Route::prefix('/admin')->middleware(['auth','isAdmin'])->group(function(){
         Route::get('/create', [LandlordProfileController::class, 'create'])->name('landlord_create');
         Route::post('/', [LandlordProfileController::class, 'store'])->name('landlord-store');
         Route::get('/get_landlord', [LandlordProfileController::class, 'getLandlord'])->name('landlord_list');
+    });
+
+    //property routes
+    Route::group(['prefix' =>'property'], function() {
+
+        Route::get('/create',[PropertyController::class, 'create' ])->name('property_create');
     });
 
 
